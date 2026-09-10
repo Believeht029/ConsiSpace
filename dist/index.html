@@ -49,6 +49,19 @@
     .nav-links a:hover { color: var(--accent-dark); }
 
     header { padding: 68px 0 48px; text-align: center; }
+    .venue {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 26px;
+      border: 1px solid #c7d5ec;
+      border-radius: 999px;
+      background: #eaf0fa;
+      color: #3f5278;
+      font-size: clamp(1.125rem, 2.4vw, 1.375rem);
+      font-weight: 800;
+      letter-spacing: .1em;
+      box-shadow: 0 4px 16px rgba(63,82,120,.06);
+    }
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -153,7 +166,7 @@
   </nav>
 
   <header id="top" class="shell">
-    <div class="eyebrow">Video Spatial Reasoning · 2026</div>
+    <div class="venue" aria-label="Conference venue: ECCV 2026">ECCV 2026</div>
     <h1><span class="project-name">ConsiSpace</span>Learning Geometric Consistency Matters<br>for Video Spatial Reasoning</h1>
     <p class="subtitle">Geometry as a principle for memory. Consistency as a signal for learning.</p>
     <div class="authors" aria-label="Authors">
