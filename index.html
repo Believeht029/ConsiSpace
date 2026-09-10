@@ -101,7 +101,8 @@
     h2 { margin: 7px 0 14px; font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.08; letter-spacing: -.045em; }
     .lead { max-width: 760px; color: var(--muted); font-size: 1.08rem; }
 
-    .figure-card { margin-top: 30px; padding: 18px; border: 1px solid var(--line); border-radius: 24px; background: white; box-shadow: var(--shadow); }
+    .figure-card { margin: 30px 0 0; padding: 18px; border: 1px solid var(--line); border-radius: 24px; background: white; box-shadow: var(--shadow); }
+    .figure-card a { display: block; }
     .figure-card img { display: block; width: 100%; border-radius: 12px; }
     .caption { margin: 14px 4px 0; color: var(--muted); font-size: .88rem; }
 
@@ -186,11 +187,13 @@
       <div class="section-kicker">Overview</div>
       <h2>Consistent evidence, from memory to learning.</h2>
       <p class="lead">Existing multimodal models often retain redundant video observations and produce unstable answers across viewpoints. ConsiSpace uses 3D spatial consistency to compact evidence and turn cross-view agreement into an explicit learning signal.</p>
+<figure class="figure-card"><a href="assets/tenser.png" target="_blank" rel="noopener" aria-label="Open full-resolution figure: ConsiSpace overview: compact memory, cross-view stability, and benchmark performance."><img src="assets/tenser.png" width="3958" height="979" style="height:auto" loading="lazy" decoding="async" alt="ConsiSpace overview: compact memory, cross-view stability, and benchmark performance."></a><figcaption class="caption">Figure 1. Efficiency, robustness, and performance of ConsiSpace. <a style="display:inline" href="assets/tenser.png" target="_blank" rel="noopener">View full resolution ↗</a></figcaption></figure>
     </section>
 
     <section id="method" class="shell">
       <div class="section-kicker">Method</div>
       <h2>Two ideas, one consistency principle.</h2>
+<figure class="figure-card"><a href="assets/structure.png" target="_blank" rel="noopener" aria-label="Open full-resolution figure: ConsiSpace architecture with visual and spatial encoders, dual memory, query fusion, and consistency rewards."><img src="assets/structure.png" width="1850" height="1712" style="height:auto" loading="lazy" decoding="async" alt="ConsiSpace architecture with visual and spatial encoders, dual memory, query fusion, and consistency rewards."></a><figcaption class="caption">Figure 2. Geometry-Consistent Memory and unified consistency learning in one framework. <a style="display:inline" href="assets/structure.png" target="_blank" rel="noopener">View full resolution ↗</a></figcaption></figure>
       <div class="feature-grid">
         <article class="card">
           <div class="card-number">01 · MEMORY</div>
@@ -222,6 +225,12 @@
         </table>
       </div>
       <p class="caption">Scores use each benchmark’s evaluation protocol. <a href="https://arxiv.org/html/2607.17599v1#S4">See full experimental results ↗</a></p>
+    </section>
+
+    <section id="qualitative" class="shell">
+      <div class="section-kicker">Qualitative results</div>
+      <h2>Different views. Consistent answers.</h2>
+<figure class="figure-card"><a href="assets/rl_loop.png" target="_blank" rel="noopener" aria-label="Open full-resolution figure: Revisited views of trash bins: baseline answers vary, while ConsiSpace answers four in both views."><img src="assets/rl_loop.png" width="3779" height="1262" style="height:auto" loading="lazy" decoding="async" alt="Revisited views of trash bins: baseline answers vary, while ConsiSpace answers four in both views."></a><figcaption class="caption">Figure 7. Answer consistency when revisiting the same scene. <a style="display:inline" href="assets/rl_loop.png" target="_blank" rel="noopener">View full resolution ↗</a></figcaption></figure>
     </section>
 
     <section id="citation" class="shell">
